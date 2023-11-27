@@ -1,0 +1,75 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "category_name": "phone",
+      "category_description": "телефон"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "product_name": "Iphone12",
+      "product_description": "iphone12",
+      "photo": "catalog/Снимок_экрана_от_2023-11-27_19-35-07.png",
+      "category": 2,
+      "price": 80000,
+      "creation_date": "2023-11-15",
+      "changing_date": "1906-07-20"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "product_name": "Iphone 13 pro",
+      "product_description": "iphone 13 pro",
+      "photo": "catalog/Снимок_экрана_от_2023-11-27_19-35-36.png",
+      "category": 2,
+      "price": 110000,
+      "creation_date": "2023-11-02",
+      "changing_date": "1906-07-12"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "product_name": "samsung s23 ultra",
+      "product_description": "samsung s23 ultra",
+      "photo": "",
+      "category": 2,
+      "price": 100000,
+      "creation_date": "1906-07-10",
+      "changing_date": "1906-07-17"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "product_name": "Honor Magic 5 Pro",
+      "product_description": "Honor Magic 5 Pro",
+      "photo": "",
+      "category": 2,
+      "price": 84000,
+      "creation_date": "2023-09-13",
+      "changing_date": "2023-11-01"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "product_name": "Google Pixel 7",
+      "product_description": "Google Pixel 7",
+      "photo": "catalog/Снимок_экрана_от_2023-11-27_19-55-06.png",
+      "category": 2,
+      "price": 46000,
+      "creation_date": "2023-10-13",
+      "changing_date": "2023-11-13"
+    }
+  }
+]
