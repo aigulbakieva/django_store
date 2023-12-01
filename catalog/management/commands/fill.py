@@ -1,9 +1,20 @@
 from django.core.management import BaseCommand
-from catalog.models import Product
+from catalog.models import Product, Category
 
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
+        Category.objects.all().delete()
+        Product.objects.all().delete()
+
+        category_list = [
+            {"pk": 1, 'category_name': 'Lashes', 'category_description': 'ресницы для наращивания'},
+            {"pk": 2, 'category_name': 'phone', 'category_description': 'телефон'},
+        ]
+
+        category_for_create = []
+        for category in category_list:
+            category_for_create.append(Category.objects.create(**category))
         products_list = [
             {
                 "product_name": "Iphone12",
