@@ -19,7 +19,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{ object.product_name|title }}</h5>
                 <p class="card-text">{{ object.price }} руб.</p>
-                <p class="card-text"> Версия {{ version.version_number }}</p>
+                <p class="card-text"> Версия {{ object.version_set.first.version_name }}</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                         <a href="/products/{{ object.pk }}" class="btn btn-primary">Подробнее</a>
