@@ -1,6 +1,14 @@
 [
   {
     "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "category_name": "Lashes",
+      "category_description": "ресницы для наращивания"
+    }
+  },
+  {
+    "model": "catalog.category",
     "pk": 2,
     "fields": {
       "category_name": "phone",
@@ -9,10 +17,10 @@
   },
   {
     "model": "catalog.product",
-    "pk": 1,
+    "pk": 16,
     "fields": {
       "product_name": "Iphone12",
-      "product_description": "iphone12",
+      "product_description": "iPhone 12 оснащён OLED дисплеем диагональю 6,1 дюйма, произведённым по технологии Super Retina XDR, c разрешением экрана 2532×1170 пикселей и плотностью 460 PPI (пикселей на дюйм). Пиковая яркость 1200 нит. Экран покрыт керамическим покрытием Ceramic Shield, произведённым совместно с компанией Corni",
       "photo": "catalog/Снимок_экрана_от_2023-11-27_19-35-07.png",
       "category": 2,
       "price": 80000,
@@ -22,10 +30,10 @@
   },
   {
     "model": "catalog.product",
-    "pk": 2,
+    "pk": 17,
     "fields": {
       "product_name": "Iphone 13 pro",
-      "product_description": "iphone 13 pro",
+      "product_description": "Процессор        Чип A15 Bionic     Новый 6‑ядерный процессор с 2 ядрами производительности и 4 ядрами эффективности     Новый 5‑ядерный графический процессор     Новая 16‑ядерная система Neural Engine",
       "photo": "catalog/Снимок_экрана_от_2023-11-27_19-35-36.png",
       "category": 2,
       "price": 110000,
@@ -35,11 +43,11 @@
   },
   {
     "model": "catalog.product",
-    "pk": 3,
+    "pk": 18,
     "fields": {
       "product_name": "samsung s23 ultra",
-      "product_description": "samsung s23 ultra",
-      "photo": "",
+      "product_description": "Частота процессора 3.36 ГГц, 2,8 ГГц, 2 ГГц",
+      "photo": "catalog/bafd8ce0fff12cb8e14764504fc32bf6.webp",
       "category": 2,
       "price": 100000,
       "creation_date": "1906-07-10",
@@ -48,11 +56,11 @@
   },
   {
     "model": "catalog.product",
-    "pk": 4,
+    "pk": 19,
     "fields": {
       "product_name": "Honor Magic 5 Pro",
-      "product_description": "Honor Magic 5 Pro",
-      "photo": "",
+      "product_description": "Honor Magic5 Pro оснащен 6,81-дюймовым ярким LTPO OLED-экраном с высоким разрешением, глубиной цвета 10 бит, динамической частотой обновления 120 Гц и поддержкой HDR10+. LTPO - технология, используемая в OLED-дисплеях, которая позволяет изменять частоту обновления экрана для экономии заряда аккумуля",
+      "photo": "catalog/honor-magic-5-pro-512gb-12gb-dual-5g-purple-3.jpg",
       "category": 2,
       "price": 84000,
       "creation_date": "2023-09-13",
@@ -61,15 +69,88 @@
   },
   {
     "model": "catalog.product",
-    "pk": 5,
+    "pk": 20,
     "fields": {
       "product_name": "Google Pixel 7",
-      "product_description": "Google Pixel 7",
+      "product_description": "роцессор: Tensor второго поколения; Память: 128 ГБ; Дисплей: 1080 х 2400 с частотой 90 Гц, OLED; Камера: 48 мп + 12 мп + 50 мп; Фронтальная камера: 12 мп; Аккумулятор: 5000 мАг; Габаритные размеры: 155,6 мм x 73,1 мм x 8,7 мм.",
       "photo": "catalog/Снимок_экрана_от_2023-11-27_19-55-06.png",
       "category": 2,
       "price": 46000,
       "creation_date": "2023-10-13",
       "changing_date": "2023-11-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 35,
+    "fields": {
+      "product_name": "test",
+      "product_description": "test",
+      "photo": "",
+      "category": null,
+      "price": 22930,
+      "creation_date": "2023-01-01",
+      "changing_date": "2023-01-01"
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 1,
+    "fields": {
+      "product": 17,
+      "version_number": 13,
+      "version_name": "pro",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 3,
+    "fields": {
+      "product": 17,
+      "version_number": 13,
+      "version_name": "13",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 4,
+    "fields": {
+      "product": 35,
+      "version_number": 1,
+      "version_name": "1",
+      "is_active": false
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 5,
+    "fields": {
+      "product": 19,
+      "version_number": 123,
+      "version_name": "111",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 6,
+    "fields": {
+      "product": 20,
+      "version_number": 879,
+      "version_name": "654",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 7,
+    "fields": {
+      "product": 16,
+      "version_number": 88,
+      "version_name": "132",
+      "is_active": true
     }
   }
 ]
