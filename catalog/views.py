@@ -1,11 +1,15 @@
+from django.conf import settings
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseForbidden
 from django.shortcuts import render
-from catalog.models import Product, Version
+from catalog.models import Product, Version, Category
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from catalog.forms import ProductForm, VersionForm, ProductModeratorForm
 from django.forms import inlineformset_factory
+from django.core.cache import cache
+
+from catalog.services import get_category_cache
 
 
 class ProductListView(ListView):
@@ -107,3 +111,11 @@ class ProductUpdateView(UpdateView):
 class ProductDeleteView(DeleteView):
     model = Product
     success_url = reverse_lazy('catalog:product_list')
+
+
+def category_list(request):
+    context = {
+        'object_list': get_category_cache()
+    }
+
+    return render(request, 'catalog/category_list.html', context)
